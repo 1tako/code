@@ -60,16 +60,13 @@ main_dir = os.path.split(os.path.abspath(__file__))[0]
 ##
 # Load images
 
-# Each sprite is 16x21 pixels starting at location 0,6 in the file
-character_ss = SpriteSheet(main_dir+'/graphics/character.png')
-character_image = character_ss.image_at((0, 6, 16, 21))
 
 
 ##
 # Setup Game Objects
 sprites = pygame.sprite.Group()
 
-user = Player(character_image)
+user = Player()
 
 clock = pygame.time.Clock()
 
